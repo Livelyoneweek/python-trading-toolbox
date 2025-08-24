@@ -1,0 +1,32 @@
+# 가상환경
+.venv/
+env/
+venv/
+
+# Python 캐시/빌드
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.egg-info/
+*.egg
+dist/
+build/
+
+# IDE/에디터
+.vscode/
+.idea/
+*.swp
+
+# OS 관련
+.DS_Store
+Thumbs.db
+
+# 로그 / 임시파일
+*.log
+*.tmp
+*.bak
+
+# uv/패키지 락파일 캐시
+.uv/
