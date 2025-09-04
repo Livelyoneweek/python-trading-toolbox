@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.13"
 
 [[package]]
@@ -250,6 +250,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/9a/c8/dd58967d119baab745caec2f9d853297cec1989ec1d63f677d3880632b88/gitpython-3.1.45.tar.gz", hash = "sha256:85b0ee964ceddf211c41b9f27a49086010a190fd8132a24e21f362a4b36a791c", size = 215076, upload-time = "2025-07-24T03:45:54.871Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/01/61/d4b89fec821f72385526e1b9d9a3a0385dda4a72b206d28049e2c7cd39b8/gitpython-3.1.45-py3-none-any.whl", hash = "sha256:8908cb2e02fb3b93b7eb0f2827125cb699869470432cc885f019b8fd0fccff77", size = 208168, upload-time = "2025-07-24T03:45:52.517Z" },
+]
+
+[[package]]
+name = "holidays"
+version = "0.80"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "python-dateutil" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/33/b2/f52d4fa787639fb77205ae7ebe2c4b8dd7415d410d3b8ee96a8a93fe8b93/holidays-0.80.tar.gz", hash = "sha256:7bf251d243723d30ef8697fb65e6bf61808a28daf2ecf8a4871f5fbb5be4ba2c", size = 764027, upload-time = "2025-09-01T19:53:45.921Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/34/15/2eaca04ba52fadfc977f187844944731b499bc61880542b6099eabeb4b14/holidays-0.80-py3-none-any.whl", hash = "sha256:dbb1c73df2ef248bde09c4de9387e82c3aadc000b081977d255fe662ee889d8e", size = 1260998, upload-time = "2025-09-01T19:53:44.014Z" },
 ]
 
 [[package]]
@@ -940,6 +952,7 @@ name = "streamlit-stock"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "holidays" },
     { name = "plotly" },
     { name = "pykrx" },
     { name = "scikit-learn" },
@@ -948,6 +961,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "holidays", specifier = ">=0.80" },
     { name = "plotly", specifier = ">=6.3.0" },
     { name = "pykrx", specifier = ">=1.0.51" },
     { name = "scikit-learn", specifier = ">=1.7.1" },
